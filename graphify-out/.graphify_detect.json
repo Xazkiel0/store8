@@ -1,0 +1,59 @@
+{
+  "files": {
+    "code": [
+      "F:\\MulaSenta\\store8\\app\\layout.tsx",
+      "F:\\MulaSenta\\store8\\app\\page.tsx",
+      "F:\\MulaSenta\\store8\\eslint.config.mjs",
+      "F:\\MulaSenta\\store8\\next.config.ts",
+      "F:\\MulaSenta\\store8\\package.json",
+      "F:\\MulaSenta\\store8\\postcss.config.mjs",
+      "F:\\MulaSenta\\store8\\tsconfig.json"
+    ],
+    "document": [
+      "F:\\MulaSenta\\store8\\.agents\\skills\\github-prd\\SKILL.md",
+      "F:\\MulaSenta\\store8\\.agents\\skills\\writing-for-agents\\SKILL-MECHANICS.md",
+      "F:\\MulaSenta\\store8\\.agents\\skills\\writing-for-agents\\SKILL.md",
+      "F:\\MulaSenta\\store8\\.agents\\skills\\writing-for-agents\\agents\\openai.yaml",
+      "F:\\MulaSenta\\store8\\AGENTS.md",
+      "F:\\MulaSenta\\store8\\CLAUDE.md",
+      "F:\\MulaSenta\\store8\\README.md",
+      "F:\\MulaSenta\\store8\\docs\\00-technology-stack.md",
+      "F:\\MulaSenta\\store8\\docs\\01-system-architecture.md",
+      "F:\\MulaSenta\\store8\\docs\\02-domain-models-and-states.md",
+      "F:\\MulaSenta\\store8\\docs\\03-orchestration-and-workflows.md",
+      "F:\\MulaSenta\\store8\\docs\\04-feature-priorities-and-scope.md",
+      "F:\\MulaSenta\\store8\\docs\\05-development-roadmap.md"
+    ],
+    "paper": [],
+    "image": [
+      "F:\\MulaSenta\\store8\\public\\file.svg",
+      "F:\\MulaSenta\\store8\\public\\globe.svg",
+      "F:\\MulaSenta\\store8\\public\\next.svg",
+      "F:\\MulaSenta\\store8\\public\\vercel.svg",
+      "F:\\MulaSenta\\store8\\public\\window.svg"
+    ],
+    "video": []
+  },
+  "total_files": 25,
+  "total_words": 10361,
+  "needs_graph": false,
+  "warning": "Corpus is ~10,361 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "unclassified": [
+    "F:\\MulaSenta\\store8\\.gitignore",
+    "F:\\MulaSenta\\store8\\app\\favicon.ico",
+    "F:\\MulaSenta\\store8\\app\\globals.css"
+  ],
+  "walk_errors": [],
+  "ignored": [
+    "F:\\MulaSenta\\store8\\next-env.d.ts"
+  ],
+  "pruned_noise_dirs": [
+    "F:\\MulaSenta\\store8\\.git\\",
+    "F:\\MulaSenta\\store8\\.next\\",
+    "F:\\MulaSenta\\store8\\graphify-out\\",
+    "F:\\MulaSenta\\store8\\node_modules\\"
+  ],
+  "graphifyignore_patterns": 22,
+  "scan_root": "F:\\MulaSenta\\store8"
+}

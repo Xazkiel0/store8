@@ -1,0 +1,339 @@
+{
+  "communities": {
+    "0": [
+      "eslint_config",
+      "eslint_config_eslintconfig",
+      "package",
+      "package_name",
+      "package_private",
+      "package_version",
+      "ref_better_auth",
+      "ref_better_sqlite3",
+      "ref_class_variance_authority",
+      "ref_clsx",
+      "ref_dnd_kit_core",
+      "ref_dnd_kit_sortable",
+      "ref_dnd_kit_utilities",
+      "ref_drizzle_kit",
+      "ref_drizzle_orm",
+      "ref_eslint",
+      "ref_eslint_config_next",
+      "ref_hookform_resolvers",
+      "ref_lucide_react",
+      "ref_motion",
+      "ref_next_themes",
+      "ref_playwright_test",
+      "ref_react",
+      "ref_react_dom",
+      "ref_react_hook_form",
+      "ref_recharts",
+      "ref_sonner",
+      "ref_tailwind_merge",
+      "ref_tailwindcss",
+      "ref_tailwindcss_postcss",
+      "ref_tanstack_react_query",
+      "ref_tanstack_react_table",
+      "ref_types_better_sqlite3",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript",
+      "ref_vitest",
+      "ref_zod"
+    ],
+    "1": [
+      "package_dependencies",
+      "package_dependencies_better_auth",
+      "package_dependencies_better_sqlite3",
+      "package_dependencies_class_variance_authority",
+      "package_dependencies_clsx",
+      "package_dependencies_dnd_kit_core",
+      "package_dependencies_dnd_kit_sortable",
+      "package_dependencies_dnd_kit_utilities",
+      "package_dependencies_drizzle_orm",
+      "package_dependencies_hookform_resolvers",
+      "package_dependencies_lucide_react",
+      "package_dependencies_motion",
+      "package_dependencies_next",
+      "package_dependencies_next_themes",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_hook_form",
+      "package_dependencies_recharts",
+      "package_dependencies_sonner",
+      "package_dependencies_tailwind_merge",
+      "package_dependencies_tanstack_react_query",
+      "package_dependencies_tanstack_react_table",
+      "package_dependencies_zod"
+    ],
+    "2": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "3": [
+      "package_devdependencies",
+      "package_devdependencies_drizzle_kit",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_playwright_test",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_better_sqlite3",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vitest"
+    ],
+    "4": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "README.md",
+      "concept:BetterAuth",
+      "concept:RepositoryGuidelines",
+      "concept:SQLiteDrizzle",
+      "concept:Storeight",
+      "concept:TailwindShadcn",
+      "concept:TanStackQueryTable",
+      "concept:ZodValidation",
+      "docs/00-technology-stack.md"
+    ],
+    "5": [
+      "app_page",
+      "app_page_home",
+      "concept:CoreDomain",
+      "concept:ExperienceDomain",
+      "concept:IntegrationDomain",
+      "concept:IntelligenceDomain",
+      "concept:OperationDomain",
+      "concept:TransactionDomain",
+      "docs/01-system-architecture.md",
+      "image:next.svg",
+      "image:vercel.svg"
+    ],
+    "6": [
+      "concept:CartStateModel",
+      "concept:CheckoutOrchestrator",
+      "concept:DomainEventBus",
+      "concept:OrderFulfillmentWorkflow",
+      "concept:OrderLifecycleModel",
+      "concept:PaymentStateModel",
+      "concept:ProductVariantModel",
+      "concept:ReservationTTLReaper",
+      "concept:ThreeTierInventory",
+      "docs/02-domain-models-and-states.md",
+      "docs/03-orchestration-and-workflows.md"
+    ],
+    "7": [
+      "app_globals",
+      "app_layout",
+      "app_layout_geistmono",
+      "app_layout_geistsans",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "concept:NextjsAppRouter",
+      "next_config",
+      "next_config_nextconfig",
+      "ref_next"
+    ],
+    "8": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_db_generate",
+      "package_scripts_db_migrate",
+      "package_scripts_db_studio",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_scripts_test"
+    ],
+    "9": [
+      "concept:P0TransactionCore",
+      "concept:P1Operations",
+      "concept:PriorityFramework",
+      "concept:RoadmapPhases",
+      "docs/04-feature-priorities-and-scope.md",
+      "docs/05-development-roadmap.md"
+    ],
+    "10": [
+      "package_allowscripts",
+      "package_allowscripts_better_sqlite3_13_0_3",
+      "package_allowscripts_esbuild_0_18_20",
+      "package_allowscripts_esbuild_0_25_12",
+      "package_allowscripts_esbuild_0_28_2",
+      "package_allowscripts_unrs_resolver"
+    ],
+    "11": [
+      ".agents/skills/writing-for-agents/SKILL-MECHANICS.md",
+      ".agents/skills/writing-for-agents/SKILL.md",
+      ".agents/skills/writing-for-agents/agents/openai.yaml",
+      "concept:WritingForAgentsSkill"
+    ],
+    "12": [
+      ".agents/skills/github-prd/SKILL.md",
+      "concept:GithubPrdSkill"
+    ],
+    "13": [
+      "postcss_config",
+      "postcss_config_config"
+    ],
+    "14": [
+      "image:file.svg"
+    ],
+    "15": [
+      "image:globe.svg"
+    ],
+    "16": [
+      "image:window.svg"
+    ]
+  },
+  "cohesion": {
+    "0": 0.05263157894736842,
+    "1": 0.08695652173913043,
+    "2": 0.10526315789473684,
+    "3": 0.15384615384615385,
+    "4": 0.18181818181818182,
+    "5": 0.2545454545454545,
+    "6": 0.21818181818181817,
+    "7": 0.2222222222222222,
+    "8": 0.2222222222222222,
+    "9": 0.3333333333333333,
+    "10": 0.3333333333333333,
+    "11": 0.5,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "concept:Storeight",
+      "label": "Storeight Architecture",
+      "degree": 10
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 9
+    },
+    {
+      "id": "package_allowscripts",
+      "label": "allowScripts",
+      "degree": 6
+    },
+    {
+      "id": "concept:TransactionDomain",
+      "label": "Transaction Domain",
+      "degree": 6
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "degree": 4
+    },
+    {
+      "id": "concept:ThreeTierInventory",
+      "label": "Three-Tier Inventory Lifecycle",
+      "degree": 4
+    },
+    {
+      "id": "concept:WritingForAgentsSkill",
+      "label": "Writing For Agents Skill",
+      "degree": 3
+    },
+    {
+      "id": "concept:ExperienceDomain",
+      "label": "Experience Domain",
+      "degree": 3
+    },
+    {
+      "id": "concept:OperationDomain",
+      "label": "Operation Domain",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Order Lifecycle State Machine",
+      "target": "Transaction Domain",
+      "source_files": [
+        "docs/02-domain-models-and-states.md",
+        "docs/01-system-architecture.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "governs",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `Order Lifecycle State Machine` unexpectedly reaches hub `Transaction Domain`"
+    },
+    {
+      "source": "Three-Tier Inventory Lifecycle",
+      "target": "Operation Domain",
+      "source_files": [
+        "docs/02-domain-models-and-states.md",
+        "docs/01-system-architecture.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "5-Phase Implementation Roadmap",
+      "target": "P0 Critical Transaction Foundation",
+      "source_files": [
+        "docs/05-development-roadmap.md",
+        "docs/04-feature-priorities-and-scope.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "executes_in_phases_1_and_2",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "Checkout Orchestrator & Saga",
+      "target": "Payment Transaction Lifecycle",
+      "source_files": [
+        "docs/03-orchestration-and-workflows.md",
+        "docs/02-domain-models-and-states.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "reconciles_with",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "Checkout Orchestrator & Saga",
+      "target": "Three-Tier Inventory Lifecycle",
+      "source_files": [
+        "docs/03-orchestration-and-workflows.md",
+        "docs/02-domain-models-and-states.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "locks_and_commits",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
