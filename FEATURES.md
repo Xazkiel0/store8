@@ -1,0 +1,262 @@
+# Daftar Fitur & Lokasi Halaman Storeight D2C Platform
+
+---
+
+## 1. Storefront Landing Page
+- **Lokasi Halaman**: `app/page.tsx` (`/`)
+- **Fitur & Detail Sub-Komponen**:
+  - **Header & Navigation Bar**
+    - Brand Logo & D2C Engine Status Badge
+    - Anchor Navigation Links:
+      - Solusi Bebas Komisi
+      - Fitur Platform
+      - Kalkulator Margin
+      - FAQ
+    - CTA Button: Konsultasi WhatsApp Langsung
+  - **Hero Value Proposition Deck**
+    - Highlighting 0% Potongan Fee Marketplace
+    - Visual badge kedaulatan data pelanggan 100%
+    - Kecepatan performa Next.js 16 App Router
+    - CTA Ganda: Mulai Bangun Toko & Preview Admin Demo
+  - **Interactive Margin & Savings Calculator** (`components/savings-calculator.tsx`)
+    - Dynamic Slider: Estimasi Omset Bulanan (Rp 10 Juta – Rp 1 Miliar)
+    - Dynamic Slider: Rata-rata Potongan Marketplace (5% – 15%)
+    - Real-Time Calculation Cards:
+      - Potongan Marketplace per Bulan
+      - Biaya Infrastruktur D2C Storeight
+      - Total Laba Tambahan yang Diselamatkan per Bulan & per Tahun
+  - **Comparison Matrix Deck**
+    - Toko Online Mandiri (Storeight) vs Marketplace Raksasa
+    - Perbandingan Dimensi:
+      - Biaya Komisi Penjualan (0% vs 8.5%–12%)
+      - Database Pelanggan (100% Milik Anda vs Dianonimkan)
+      - Retensi & Remarketing WhatsApp/Email (Langsung vs Dilarang)
+      - Settlement Pencairan Dana (Otomatis T+0/T+1 vs Hold 3–7 Hari)
+      - Algoritma Perang Harga (Bebas Kompetitor vs Ditampilkan Produk Serupa)
+  - **Core Feature Grid Showcase**
+    - Multi-Tier Stock Locking (Anti-Overselling)
+    - Integrasi QRIS Dinamis & Virtual Account
+    - Sinkronisasi Ekspedisi & Ongkir Otomatis (JNE, SiCepat, J&T, GoSend)
+    - Generator Resi Otomatis & Thermal A6 AWB
+  - **FAQ Accordion & CTA Footer**
+    - Pertanyaan Seputar Migrasi dari Marketplace
+    - Hak Milik Kode Sumber & Database
+    - Kontak WhatsApp Konsultasi
+
+---
+
+## 2. Shared Admin Shell & Global Infrastructure
+- **Lokasi Halaman**: `app/admin/layout.tsx` & `components/admin/admin-nav.tsx`
+- **Fitur & Detail Sub-Komponen**:
+  - **Top Announcement & Quick Action Bar**
+    - Indikator Status: 0% Fee Marketplace Aktif (Live Pulse)
+    - Counter Akumulasi Penghematan Komisi Bulanan
+    - Shortcut Tombol Cetak Batch Thermal AWB
+    - Shortcut Tombol Tambah SKU Baru
+    - Tautan Cepat Membuka Storefront Pembeli (Tab Baru)
+    - Admin Profile Avatar & Role Indicator
+  - **Responsive Sidebar Navigation** (`components/admin/admin-nav.tsx`)
+    - Workspace / Store Switcher:
+      - Dropdown Pilihan Multi-Branch / Multi-Store
+      - Tautan Cepat Storefront
+    - Modul Navigasi Utama (dengan Active Route Detection & Live Badge):
+      - **Executive Overview** (`/admin`) — Badge: `Live`
+      - **GMV & Fee Savings** (`/admin/analytics`) — Badge: `0% Cut`
+      - **Order Fulfillment** (`/admin/orders`) — Badge: `14 Butuh Kirim`
+      - **3-Tier Inventory** (`/admin/inventory`) — Badge: `3 Reservasi`
+      - **Catalog & SKU Matrix** (`/admin/products`) — Badge: `12 SKU`
+    - System Architecture Health Indicator:
+      - Status Engine D2C (Uptime 99.98%)
+      - TTL Reservation Worker (600s Auto-Free)
+      - Database SQLite + Drizzle Engine
+      - Versi Rilis & Latensi Operasional
+    - Mobile Drawer Navigation & Backdrop Toggle
+
+---
+
+## 3. Executive Overview & Real-Time Radar
+- **Lokasi Halaman**: `app/admin/page.tsx` (`/admin`)
+- **Fitur & Detail Sub-Komponen**:
+  - **Executive Radar Header**
+    - Indikator Sinkronisasi SQLite Real-Time
+    - Quick Dispatch CTA: Cetak AWB Siap Kirim (14 Pesanan)
+    - Quick Action CTA: Tambah Produk Baru
+  - **4 Core Operational Metric Cards**
+    - **GMV Hari Ini (Gross Merchandise Value)**: Nilai omset harian & persentase pertumbuhan vs hari sebelumnya.
+    - **Fee Marketplace Hemat**: Akumulasi biaya komisi 8.5% yang berhasil dihindari bulan berjalan.
+    - **Antrean Dispatch Resi**: Jumlah pesanan butuh aksi (siap packing vs menunggu kurir).
+    - **Stok 3-Tier Active**: Jumlah stok Available, Reserved (TTL), dan Committed.
+  - **D2C Financial Sovereignty Banner**
+    - Edukasi kedaulatan dana langsung masuk rekening toko tanpa hold sistem marketplace.
+  - **Real-Time Transaction Stream (Left Column)**
+    - Live Table Antrean Pesanan Terbaru:
+      - Order ID & Timestamp Transaksi
+      - Nama Pelanggan, Nomor Kontak, dan Kota Tujuan
+      - Ringkasan Item Produk & Pilihan Ekspedisi Logistik
+      - Total Nilai Pembayaran
+      - Status State Badge (`CONFIRMED`, `RESERVED TTL`, `PACKED`, `SHIPPED`)
+      - Tombol Aksi Cepat Cetak AWB / Request Pickup Kurir
+    - Tautan Cepat Menuju Halaman Lengkap Pesanan
+  - **3-Tier Stock Lifecycle Quick Radar (Right Column)**
+    - Visual Multi-Segment Bar Pool Inventori (Available vs Reserved vs Committed)
+    - Tiga Kotak Status Stok Cepat
+    - Active Locking Reservation Feed (Menampilkan Cart ID, Pembeli, dan Sisa Waktu TTL Countdown `08:42`)
+  - **Thermal A6 AWB Generator Shortcut**
+    - Pilihan Cetak Batch 14 Label AWB & Request Pickup Ekspedisi Sekaligus
+
+---
+
+## 4. GMV & Commission Savings Intelligence
+- **Lokasi Halaman**: `app/admin/analytics/page.tsx` (`/admin/analytics`)
+- **Fitur & Detail Sub-Komponen**:
+  - **Header & Timeframe Switcher Filter**
+    - Filter Waktu Multi-Periode:
+      - `Hari Ini`
+      - `7 Hari Terakhir`
+      - `30 Hari Terakhir`
+      - `Year-to-Date (YTD 2025)`
+  - **4 Core Financial Metric Cards**
+    - **Gross Merchandise Value (GMV)**: Total omset kotor & volume transaksi.
+    - **Net Rekening Toko**: Realisasi kas bersih yang diterima di rekening (99.5%).
+    - **Komisi Hemat (8.5% Benchmark)**: Uang tunai yang diselamatkan ke kas operasional.
+    - **Rata-Rata Nilai Order (AOV)**: Rata-rata keranjang belanja untuk evaluasi bundling.
+  - **Interactive Margin Recovery Simulator (Kalkulator Pemulihan Margin)**
+    - Interactive Slider: Omset Bulanan (Rp 10 Juta – Rp 1 Miliar)
+    - Interactive Slider: Estimasi Fee Potongan Marketplace (5.0% – 15.0%)
+    - Real-Time Comparison Output Cards:
+      - **Marketplace Raksasa Cut**: Rincian potongan platform, transaksi, dan penanganan.
+      - **Storeight D2C Infrastructure**: Biaya hanya MDR resmi QRIS (0.5%).
+      - **Tambahan Margin Bersih**: Laba ekstra per bulan dan proyeksi tahunan yang masuk kantong penjual.
+  - **Top 5 High-Velocity SKU Performance Table**
+    - Performa SKU Terlaris:
+      - Kode SKU & Nama Varian Produk
+      - Total Unit Terjual (pcs)
+      - Kontribusi GMV
+      - Margin Keuntungan (%)
+      - Nominal Biaya Marketplace yang Berhasil Dihindari (Fee Saved)
+  - **Payment Method & Channel Distribution Radar**
+    - Visualisasi Distribusi Saluran Pembayaran:
+      - QRIS Dinamis (GoPay, OVO, Dana, ShopeePay) — 62%
+      - Virtual Account (BCA, Mandiri, BRI, BNI) — 30%
+      - COD Ekspedisi Terintegrasi — 8%
+    - Catatan Jadwal Settlement Otomatis Rekening (T+0/T+1)
+
+---
+
+## 5. Order Pipeline & Fulfillment Center
+- **Lokasi Halaman**: `app/admin/orders/page.tsx` (`/admin/orders`)
+- **Fitur & Detail Sub-Komponen**:
+  - **Lifecycle Status Tabs Filter**
+    - Tab Status State:
+      - `Semua Pesanan` (128)
+      - `Menunggu Bayar` (4 - Status Reserved TTL)
+      - `Lunas / Butuh Packing` (14 - Status Confirmed)
+      - `Siap Kirim` (9 - Status Packed)
+      - `Dalam Pengiriman` (38 - Status Shipped)
+      - `Selesai` (61 - Status Delivered)
+      - `Batal / Expired` (2 - Status Cancelled)
+  - **Search, Filter & Batch Action Deck**
+    - Live Search Input (Berdasarkan No. Order, Nama Pembeli, No. HP, atau No. Resi)
+    - Filter Pilihan Kurir Ekspedisi (JNE, SiCepat, J&T, GoSend)
+    - Multi-Select Checkbox untuk Aksi Massal
+    - Tombol Cetak Label Thermal Batch untuk Pesanan Terpilih
+  - **Order Pipeline Master Table**
+    - Checkbox Seleksi per Baris
+    - Order ID, Tanggal/Waktu, dan Metode Pembayaran
+    - Data Penerima: Nama, No. HP, Kota, dan Alamat Lengkap
+    - Data Ekspedisi: Nama Kurir, Layanan (Reguler/Next Day/Cargo), Berat Total, dan Nomor Resi (dengan Tombol Salin Resi 1-Klik)
+    - Total Nilai Transaksi (IDR)
+    - Status State Badge dengan Indikator Visual Khusus
+    - Action Buttons: Preview Thermal Label AWB & Lihat Detail Pesanan
+  - **Thermal A6 AWB Label Print Simulator (Modal)**
+    - Preview Layout Stiker Thermal Standar 100 x 150 mm:
+      - Header Ekspedisi & Tipe Layanan
+      - Berat Aktual Paket (kg)
+      - Mockup Barcode & Kode Resi Cetak
+      - Kotak Informasi Penerima Lengkap dengan Kode Pos
+      - Kotak Informasi Pengirim (Gudang Storeight D2C)
+      - Daftar Isi Paket & Rincian SKU per Varian
+      - Penanda Status Non-COD / Lunas
+    - Tombol Eksekusi Cetak ke Printer Thermal
+  - **Order Detail Snapshot (Modal)**
+    - Informasi Lengkap Pemesan & Alamat Tujuan
+    - Rincian Produk, Varian, SKU, Jumlah Unit, dan Subtotal
+    - Total Pembayaran Akhir
+
+---
+
+## 6. 3-Tier Inventory Lifecycle Monitor
+- **Lokasi Halaman**: `app/admin/inventory/page.tsx` (`/admin/inventory`)
+- **Fitur & Detail Sub-Komponen**:
+  - **Header & Worker Status**
+    - Indikator Cron Auto-Release TTL Aktif (Mencegah Overselling)
+  - **3-Tier Stock Summary Metrics**
+    - **Total Fisik Gudang**: Seluruh unit fisik yang tercatat.
+    - **1. Available (Bebas)**: Stok yang siap dibeli dan dimasukkan keranjang.
+    - **2. Reserved (Locked TTL)**: Stok yang sedang dikunci selama 600 detik di sesi checkout pembeli.
+    - **3. Committed (Lunas)**: Stok yang telah terbayar dan siap dipacking/dikirim.
+  - **Live Locking Reservations Deck (TTL Monitor)**
+    - Kartu Pemantau Sesi Reservasi Aktif:
+      - ID Sesi Keranjang (Cart ID)
+      - Nama Produk, SKU, dan Varian
+      - Jumlah Unit Terkunci
+      - Identitas/Lokasi Pembeli
+      - **Live Countdown Timer** (Menghitung mundur detik sisa waktu pembayaran secara real-time)
+      - **Tombol Force Release**: Mengembalikan stok terkunci langsung ke status Available jika pembeli membatalkan transaksi.
+  - **SKU Stock Matrix & Safety Stock Alert Table**
+    - Live Search Filter Kode SKU atau Nama Varian
+    - Tabel Matriks Varian:
+      - Kode SKU Unik
+      - Nama Produk & Deskripsi Varian
+      - Kolom Stok Available (Bebas)
+      - Kolom Stok Reserved (Terkunci)
+      - Kolom Stok Committed (Lunas)
+      - Kolom Total Fisik
+      - Status Alert: **Normal Safe** vs **Low Stock Alert** (jika stok $\le$ batas threshold)
+      - Tombol Aksi Restock Cepat
+  - **Stock Opname Restock Modal**
+    - Input Penambahan Jumlah Unit Stok Baru
+    - Kalkulasi Real-Time Pembaruan Stok Available
+
+---
+
+## 7. Catalog & SKU Matrix Management
+- **Lokasi Halaman**: `app/admin/products/page.tsx` (`/admin/products`)
+- **Fitur & Detail Sub-Komponen**:
+  - **Header & Master Product Trigger**
+    - Indikator Kesiapan Logistik Volumetrik
+    - Tombol Tambah Master Produk Baru
+  - **Search & Category Filtering**
+    - Search Bar: Pencarian Berdasarkan Nama Produk atau Kode SKU
+    - Dropdown Kategori: Outerwear, T-Shirt, Bottoms, Accessories
+  - **Master Product Accordion Deck**
+    - Baris Master Produk:
+      - Thumbnail & Ikon Kategori
+      - Nama Master Produk
+      - Status Publikasi Badge (`ACTIVE` / `DRAFT`)
+      - Metadata: Kategori, Jumlah Varian, dan Total Akumulasi Stok
+      - Rentang Harga Jual Minimum – Maksimum
+      - Tombol Expand / Collapse Matriks Varian
+    - **Nested Variant & SKU Matrix Sub-Table**:
+      - Kode SKU Unik (e.g. `HD-BLK-M`, `HD-BLK-L`, `HD-BLK-XL`)
+      - Spesifikasi Ukuran & Warna
+      - Harga Jual & Harga Coret (Compare-at Price)
+      - Jumlah Stok per Varian
+      - Berat Aktual Fisik (gram & kg)
+      - Dimensi Fisik: Panjang $\times$ Lebar $\times$ Tinggi (cm)
+      - **Kalkulasi Bobot Volumetrik Otomatis**:
+        $$\text{Berat Volumetrik (kg)} = \frac{\text{Panjang (cm)} \times \text{Lebar (cm)} \times \text{Tinggi (cm)}}{6000}$$
+      - Indikator Bobot yang Ditagihkan oleh Kurir ($\max(\text{Aktual}, \text{Volumetrik})$)
+      - Tombol Edit Matriks
+  - **Master Product & Initial Variant Creation Modal**
+    - Form Input Data Master Produk:
+      - Nama Master Produk
+      - Pilihan Kategori Produk
+      - Kode SKU Perdana
+      - Ukuran & Warna
+      - Harga Jual & Stok Awal
+    - Form Atribut Logistik & Dimensi:
+      - Input Berat Aktual (gram)
+      - Input Dimensi Panjang, Lebar, dan Tinggi (cm)
+      - **Live Preview Kalkulator Volumetrik vs Berat Aktual**: Menampilkan perbandingan langsung bobot yang akan ditagihkan sebelum disimpan.
+    - Tombol Simpan Master Produk & Varian Baru

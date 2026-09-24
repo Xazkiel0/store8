@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Storeight Executive Operations Hub</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    body { background-color: #090d16; color: #f8fafc; display: flex; width: 1440px; min-height: 1024px; }
+    
+    /* Sidebar */
+    .sidebar { width: 260px; background-color: #111827; border-right: 1px solid #1f2937; padding: 24px 16px; display: flex; flex-direction: column; justify-content: space-between; }
+    .brand { display: flex; items-center: center; gap: 12px; margin-bottom: 32px; padding: 0 8px; }
+    .brand-icon { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, #2563eb, #1d4ed8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 18px; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35); }
+    .brand-title { font-size: 16px; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; }
+    .brand-tag { font-size: 10px; font-weight: 700; background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 2px 6px; border-radius: 9999px; margin-left: 6px; }
+    
+    .nav-list { display: flex; flex-direction: column; gap: 6px; }
+    .nav-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; color: #94a3b8; text-decoration: none; }
+    .nav-item.active { background-color: #1e293b; color: #38bdf8; border: 1px solid #334155; }
+    .nav-item:hover { background-color: #1f2937; color: #ffffff; }
+    .nav-badge { font-size: 11px; padding: 2px 8px; border-radius: 9999px; font-weight: 700; }
+    .nav-badge-green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .nav-badge-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    
+    .sidebar-footer { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+    .savings-pill { display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: #94a3b8; }
+    .savings-amount { font-size: 15px; font-weight: 800; color: #10b981; font-family: monospace; }
+    
+    /* Main Content */
+    .main { flex: 1; display: flex; flex-direction: column; background: #090d16; }
+    
+    /* Header */
+    .header { height: 70px; border-bottom: 1px solid #1f2937; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(8px); }
+    .header-left { display: flex; align-items: center; gap: 16px; }
+    .header-title { font-size: 18px; font-weight: 800; color: #ffffff; }
+    .radar-tag { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.25); padding: 4px 10px; border-radius: 9999px; }
+    .pulse-dot { width: 6px; height: 6px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981; }
+    
+    .header-actions { display: flex; align-items: center; gap: 12px; }
+    .btn { padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; border: none; display: flex; align-items: center; gap: 8px; }
+    .btn-secondary { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; }
+    .btn-primary { background: #2563eb; color: #ffffff; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35); }
+    
+    /* Content Body */
+    .content { padding: 28px 32px; display: flex; flex-direction: column; gap: 24px; overflow-y: auto; }
+    
+    /* KPI Grid */
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .kpi-card { background: #111827; border: 1px solid #1f2937; border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+    .kpi-card-highlight { background: linear-gradient(145deg, #111827, #132238); border: 1px solid #1d4ed8; }
+    .kpi-head { display: flex; align-items: center; justify-content: space-between; }
+    .kpi-label { font-size: 12px; font-weight: 600; color: #94a3b8; }
+    .kpi-badge { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 9999px; }
+    .kpi-badge-green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .kpi-badge-blue { background: rgba(37, 99, 235, 0.15); color: #60a5fa; }
+    .kpi-badge-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    .kpi-value { font-size: 24px; font-weight: 800; color: #ffffff; letter-spacing: -0.03em; font-family: monospace; }
+    .kpi-sub { font-size: 11px; color: #64748b; }
+    
+    /* Middle Section: Chart & 3-Tier Inventory */
+    .split-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+    .card { background: #111827; border: 1px solid #1f2937; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 18px; }
+    .card-title { font-size: 14px; font-weight: 700; color: #ffffff; display: flex; align-items: center; justify-content: space-between; }
+    
+    /* 3-Tier Inventory Levels */
+    .tier-list { display: flex; flex-direction: column; gap: 12px; }
+    .tier-item { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; }
+    .tier-name { font-size: 12px; font-weight: 600; color: #e2e8f0; display: flex; align-items: center; gap: 8px; }
+    .tier-indicator { width: 8px; height: 8px; border-radius: 50%; }
+    .tier-green { background: #10b981; box-shadow: 0 0 6px #10b981; }
+    .tier-amber { background: #f59e0b; box-shadow: 0 0 6px #f59e0b; }
+    .tier-blue { background: #3b82f6; box-shadow: 0 0 6px #3b82f6; }
+    .tier-count { font-size: 14px; font-weight: 800; font-family: monospace; color: #ffffff; }
+    
+    /* Table */
+    .table-container { background: #111827; border: 1px solid #1f2937; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 16px; }
+    .table { width: 100%; border-collapse: collapse; text-align: left; }
+    .table th { font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; padding: 12px 14px; border-bottom: 1px solid #1f2937; }
+    .table td { font-size: 12px; font-weight: 500; color: #e2e8f0; padding: 14px; border-bottom: 1px solid #1a2234; }
+    .table tr:hover td { background-color: #162032; }
+    .status-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+    .status-paid { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .status-processing { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .status-reserved { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div>
+      <div class="brand">
+        <div class="brand-icon">S8</div>
+        <div style="display: flex; align-items: center;">
+          <span class="brand-title">Storeight</span>
+          <span class="brand-tag">0% Fee</span>
+        </div>
+      </div>
+      
+      <nav class="nav-list">
+        <a href="#" class="nav-item active">
+          <span>Overview Radar</span>
+          <span class="nav-badge nav-badge-green">Live</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span>All Orders</span>
+          <span class="nav-badge nav-badge-amber">12 New</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span>Products & SKUs</span>
+          <span style="color: #64748b; font-size: 11px;">148</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span>3-Tier Inventory</span>
+          <span class="nav-badge nav-badge-green">Sync</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span>Analytics & GMV</span>
+          <span></span>
+        </a>
+        <a href="#" class="nav-item">
+          <span>Courier Dispatch Hub</span>
+          <span class="nav-badge nav-badge-green">J&T / SiCepat</span>
+        </a>
+      </nav>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="savings-pill">
+        <span>Marketplace Savings</span>
+        <span style="color: #10b981; font-weight: 700;">+8.5% Net</span>
+      </div>
+      <div class="savings-amount">Rp 14.850.000</div>
+      <div style="font-size: 10px; color: #64748b;">Direct D2C transactions without commission deductions</div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main">
+    <!-- Top Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="header-title">Executive Operations Hub</h1>
+        <div class="radar-tag">
+          <div class="pulse-dot"></div>
+          <span>Real-time SQLite Engine Active</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn btn-secondary">Export Report</button>
+        <button class="btn btn-primary">+ Create New Order</button>
+      </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="content">
+      <!-- 4 KPI Cards -->
+      <section class="kpi-grid">
+        <div class="kpi-card kpi-card-highlight">
+          <div class="kpi-head">
+            <span class="kpi-label">Gross Revenue (GMV)</span>
+            <span class="kpi-badge kpi-badge-green">+18.4% MoM</span>
+          </div>
+          <div class="kpi-value">Rp 184.250.000</div>
+          <div class="kpi-sub">Total direct D2C settlement volume</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-label">0% Fee Profit Kept</span>
+            <span class="kpi-badge kpi-badge-green">Saved 100%</span>
+          </div>
+          <div class="kpi-value" style="color: #10b981;">Rp 15.661.250</div>
+          <div class="kpi-sub">Retained margin vs 8.5% third-party marketplace fees</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-label">Active Orders & SLA</span>
+            <span class="kpi-badge kpi-badge-blue">98.6% On Time</span>
+          </div>
+          <div class="kpi-value">48 Orders</div>
+          <div class="kpi-sub">12 Pending | 24 Processing | 12 Dispatched</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-label">3-Tier Inventory Health</span>
+            <span class="kpi-badge kpi-badge-amber">94.2% Available</span>
+          </div>
+          <div class="kpi-value">5,194 SKUs</div>
+          <div class="kpi-sub">4,120 Avail | 184 Reserved | 890 Committed</div>
+        </div>
+      </section>
+
+      <!-- Mid Section: Performance Chart & 3-Tier Inventory -->
+      <section class="split-grid">
+        <div class="card">
+          <div class="card-title">
+            <span>Direct GMV vs Marketplace Fee Protection</span>
+            <span style="font-size: 11px; color: #10b981; font-weight: 600;">Monthly Cumulative Gain</span>
+          </div>
+          <div style="height: 160px; background: #162032; border-radius: 10px; border: 1px dashed #334155; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 13px;">
+            [ GMV Growth & Fee-Avoidance Sparkline Visualization ]
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>3-Tier Inventory State</span>
+            <span style="font-size: 11px; color: #38bdf8;">TTL 15m Active</span>
+          </div>
+          <div class="tier-list">
+            <div class="tier-item">
+              <div class="tier-name">
+                <span class="tier-indicator tier-green"></span>
+                <span>Tier 1: Available</span>
+              </div>
+              <span class="tier-count">4,120</span>
+            </div>
+            <div class="tier-item">
+              <div class="tier-name">
+                <span class="tier-indicator tier-amber"></span>
+                <span>Tier 2: Reserved (TTL)</span>
+              </div>
+              <span class="tier-count">184</span>
+            </div>
+            <div class="tier-item">
+              <div class="tier-name">
+                <span class="tier-indicator tier-blue"></span>
+                <span>Tier 3: Committed</span>
+              </div>
+              <span class="tier-count">890</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Orders Live Table -->
+      <section class="table-container">
+        <div class="card-title">
+          <span>Real-Time Order Stream & Dispatch Queue</span>
+          <span style="font-size: 12px; color: #94a3b8;">Updated 1m ago</span>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Items & SKU</th>
+              <th>Total Amount</th>
+              <th>Inventory Status</th>
+              <th>Fulfillment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-family: monospace; font-weight: 700; color: #38bdf8;">#ORD-98421</td>
+              <td>Budi Pratama</td>
+              <td>Ergonomic Desk Mat x 2</td>
+              <td style="font-family: monospace; font-weight: 700;">Rp 450.000</td>
+              <td><span class="status-badge status-paid">Committed (Paid)</span></td>
+              <td><span style="color: #10b981; font-weight: 600;">Ready to Dispatch (J&T)</span></td>
+            </tr>
+            <tr>
+              <td style="font-family: monospace; font-weight: 700; color: #38bdf8;">#ORD-98420</td>
+              <td>Siti Rahma</td>
+              <td>Mechanical Keyboard Pro x 1</td>
+              <td style="font-family: monospace; font-weight: 700;">Rp 1.250.000</td>
+              <td><span class="status-badge status-processing">Committed (Packing)</span></td>
+              <td><span style="color: #60a5fa; font-weight: 600;">Printing Shipping Label</span></td>
+            </tr>
+            <tr>
+              <td style="font-family: monospace; font-weight: 700; color: #38bdf8;">#ORD-98419</td>
+              <td>Denny Setiawan</td>
+              <td>Wireless Mouse G3 x 1</td>
+              <td style="font-family: monospace; font-weight: 700;">Rp 320.000</td>
+              <td><span class="status-badge status-reserved">Reserved (11:42 TTL)</span></td>
+              <td><span style="color: #fbbf24; font-weight: 600;">Awaiting Payment</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

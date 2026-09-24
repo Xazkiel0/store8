@@ -23,6 +23,12 @@
 # misc
 .DS_Store
 *.pem
+.agents
+.hermes
+.kiro
+.pi
+.omp
+
 
 # debug
 npm-debug.log*

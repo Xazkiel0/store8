@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="766" height="172" viewBox="0 0 766 172">
+  <defs>
+    <filter id="fx0">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    <filter id="fx1">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    <filter id="fx2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    <filter id="fx3">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    <filter id="fx4">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    <filter id="fx5">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+  </defs>
+  <g transform="translate(262, 12)">
+    <rect width="260" height="100" fill="#111827"/>
+    <g>
+      <g>
+        <g filter="url(#fx0)">
+          <rect width="36" height="36" rx="10" ry="10" fill="#000000"/>
+          <g>
+            <text x="0" y="18" font-family="Inter" font-size="18" font-weight="800" fill="#FFFFFF">S8</text>
+          </g>
+        </g>
+        <g>
+          <g transform="translate(0, 40)">
+            <text x="0" y="16" font-family="Inter" font-size="16" font-weight="700" fill="#FFFFFF" letter-spacing="-0.02">Storeight</text>
+          </g>
+          <g>
+            <rect width="100" height="100" rx="9999" ry="9999" fill="#000000" stroke="#000000" stroke-width="1"/>
+            <g>
+              <text x="0" y="10" font-family="Inter" font-size="10" font-weight="700" fill="#10B981">0% Fee</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect width="100" height="100" rx="8" ry="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(14, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#38BDF8">Overview Radar</text>
+          </g>
+          <g>
+            <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#34D399">Live</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g transform="translate(14, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#94A3B8">All Orders</text>
+          </g>
+          <g>
+            <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#FBBF24">12 New</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g transform="translate(14, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#94A3B8">Products &amp; SKUs</text>
+          </g>
+          <g transform="translate(134, 40)">
+            <text x="0" y="11" font-family="Inter" font-size="11" font-weight="600" fill="#64748B">148</text>
+          </g>
+        </g>
+        <g>
+          <g transform="translate(14, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#94A3B8">3-Tier Inventory</text>
+          </g>
+          <g>
+            <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#34D399">Sync</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g transform="translate(14, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#94A3B8">Analytics &amp; GMV</text>
+          </g>
+          <g transform="translate(134, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#94A3B8"></text>
+          </g>
+        </g>
+        <g>
+          <g transform="translate(14, 40)">
+            <text x="0" y="13" font-family="Inter" font-size="13" font-weight="600" fill="#94A3B8">Courier Dispatch Hub</text>
+          </g>
+          <g>
+            <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#34D399">J&amp;T / SiCepat</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect width="100" height="100" rx="12" ry="12" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <g>
+        <g transform="translate(0, 40)">
+          <text x="0" y="11" font-family="Inter" font-size="11" fill="#94A3B8">Marketplace Savings</text>
+        </g>
+        <g transform="translate(152, 40)">
+          <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#10B981">+8.5% Net</text>
+        </g>
+      </g>
+      <g>
+        <text x="0" y="15" font-family="monospace" font-size="15" font-weight="800" fill="#10B981">Rp 14.850.000</text>
+      </g>
+      <g>
+        <text x="0" y="10" font-family="Inter" font-size="10" fill="#64748B">Direct D2C transactions without commission deductions</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(262, 12)">
+    <rect width="100" height="100" fill="#090D16"/>
+    <g>
+      <rect width="100" height="70" fill="#000000"/>
+      <g>
+        <g transform="translate(0, 40)">
+          <text x="0" y="18" font-family="Inter" font-size="18" font-weight="800" fill="#FFFFFF">Executive Operations Hub</text>
+        </g>
+        <g>
+          <rect width="100" height="100" rx="9999" ry="9999" fill="#000000" stroke="#000000" stroke-width="1"/>
+          <g filter="url(#fx1)">
+            <rect width="6" height="6" rx="50" ry="50" fill="#10B981"/>
+          </g>
+          <g transform="translate(22, 40)">
+            <text x="0" y="11" font-family="Inter" font-size="11" font-weight="600" fill="#10B981">Real-time SQLite Engine Active</text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect width="100" height="100" rx="8" ry="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(16, 40)">
+            <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#E2E8F0">Export Report</text>
+          </g>
+        </g>
+        <g filter="url(#fx2)">
+          <rect width="100" height="100" rx="8" ry="8" fill="#2563EB"/>
+          <g transform="translate(16, 40)">
+            <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#FFFFFF">+ Create New Order</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <rect width="100" height="100" rx="14" ry="14" fill="#000000" stroke="#1D4ED8" stroke-width="1"/>
+          <g>
+            <g transform="translate(0, 40)">
+              <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8">Gross Revenue (GMV)</text>
+            </g>
+            <g>
+              <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+              <g>
+                <text x="0" y="10" font-family="Inter" font-size="10" font-weight="700" fill="#34D399">+18.4% MoM</text>
+              </g>
+            </g>
+          </g>
+          <g>
+            <text x="0" y="24" font-family="monospace" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="-0.03">Rp 184.250.000</text>
+          </g>
+          <g>
+            <text x="0" y="11" font-family="Inter" font-size="11" fill="#64748B">Total direct D2C settlement volume</text>
+          </g>
+        </g>
+        <g>
+          <rect width="100" height="100" rx="14" ry="14" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+          <g>
+            <g transform="translate(0, 40)">
+              <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8">0% Fee Profit Kept</text>
+            </g>
+            <g>
+              <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+              <g>
+                <text x="0" y="10" font-family="Inter" font-size="10" font-weight="700" fill="#34D399">Saved 100%</text>
+              </g>
+            </g>
+          </g>
+          <g>
+            <text x="0" y="24" font-family="monospace" font-size="24" font-weight="800" fill="#10B981" letter-spacing="-0.03">Rp 15.661.250</text>
+          </g>
+          <g>
+            <text x="0" y="11" font-family="Inter" font-size="11" fill="#64748B">Retained margin vs 8.5% third-party marketplace fees</text>
+          </g>
+        </g>
+        <g>
+          <rect width="100" height="100" rx="14" ry="14" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+          <g>
+            <g transform="translate(0, 40)">
+              <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8">Active Orders &amp; SLA</text>
+            </g>
+            <g>
+              <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+              <g>
+                <text x="0" y="10" font-family="Inter" font-size="10" font-weight="700" fill="#60A5FA">98.6% On Time</text>
+              </g>
+            </g>
+          </g>
+          <g>
+            <text x="0" y="24" font-family="monospace" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="-0.03">48 Orders</text>
+          </g>
+          <g>
+            <text x="0" y="11" font-family="Inter" font-size="11" fill="#64748B">12 Pending | 24 Processing | 12 Dispatched</text>
+          </g>
+        </g>
+        <g>
+          <rect width="100" height="100" rx="14" ry="14" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+          <g>
+            <g transform="translate(0, 40)">
+              <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8">3-Tier Inventory Health</text>
+            </g>
+            <g>
+              <rect width="100" height="100" rx="9999" ry="9999" fill="#000000"/>
+              <g>
+                <text x="0" y="10" font-family="Inter" font-size="10" font-weight="700" fill="#FBBF24">94.2% Available</text>
+              </g>
+            </g>
+          </g>
+          <g>
+            <text x="0" y="24" font-family="monospace" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="-0.03">5,194 SKUs</text>
+          </g>
+          <g>
+            <text x="0" y="11" font-family="Inter" font-size="11" fill="#64748B">4,120 Avail | 184 Reserved | 890 Committed</text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect width="100" height="100" rx="14" ry="14" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+          <g>
+            <g transform="translate(0, 40)">
+              <text x="0" y="14" font-family="Inter" font-size="14" font-weight="700" fill="#FFFFFF">Direct GMV vs Marketplace Fee Protection</text>
+            </g>
+            <g transform="translate(320, 40)">
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="600" fill="#10B981">Monthly Cumulative Gain</text>
+            </g>
+          </g>
+          <g>
+            <rect width="100" height="160" rx="10" ry="10" fill="#162032" stroke="#334155" stroke-width="1"/>
+            <g transform="translate(-262, 0)">
+              <text x="0" y="13" font-family="Inter" font-size="13" fill="#94A3B8">
+            [ GMV Growth &amp; Fee-Avoidance Sparkline Visualization ]
+          </text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <rect width="100" height="100" rx="14" ry="14" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+          <g>
+            <g transform="translate(0, 40)">
+              <text x="0" y="14" font-family="Inter" font-size="14" font-weight="700" fill="#FFFFFF">3-Tier Inventory State</text>
+            </g>
+            <g transform="translate(176, 40)">
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#38BDF8">TTL 15m Active</text>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect width="100" height="100" rx="10" ry="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+              <g>
+                <g filter="url(#fx3)">
+                  <rect width="8" height="8" rx="50" ry="50" fill="#10B981"/>
+                </g>
+                <g transform="translate(16, 40)">
+                  <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#E2E8F0">Tier 1: Available</text>
+                </g>
+              </g>
+              <g transform="translate(114, 40)">
+                <text x="0" y="14" font-family="monospace" font-size="14" font-weight="800" fill="#FFFFFF">4,120</text>
+              </g>
+            </g>
+            <g>
+              <rect width="100" height="100" rx="10" ry="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+              <g>
+                <g filter="url(#fx4)">
+                  <rect width="8" height="8" rx="50" ry="50" fill="#F59E0B"/>
+                </g>
+                <g transform="translate(16, 40)">
+                  <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#E2E8F0">Tier 2: Reserved (TTL)</text>
+                </g>
+              </g>
+              <g transform="translate(114, 40)">
+                <text x="0" y="14" font-family="monospace" font-size="14" font-weight="800" fill="#FFFFFF">184</text>
+              </g>
+            </g>
+            <g>
+              <rect width="100" height="100" rx="10" ry="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+              <g>
+                <g filter="url(#fx5)">
+                  <rect width="8" height="8" rx="50" ry="50" fill="#3B82F6"/>
+                </g>
+                <g transform="translate(16, 40)">
+                  <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#E2E8F0">Tier 3: Committed</text>
+                </g>
+              </g>
+              <g transform="translate(114, 40)">
+                <text x="0" y="14" font-family="monospace" font-size="14" font-weight="800" fill="#FFFFFF">890</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect width="100" height="100" rx="14" ry="14" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+        <g>
+          <g transform="translate(0, 40)">
+            <text x="0" y="14" font-family="Inter" font-size="14" font-weight="700" fill="#FFFFFF">Real-Time Order Stream &amp; Dispatch Queue</text>
+          </g>
+          <g transform="translate(312, 40)">
+            <text x="0" y="12" font-family="Inter" font-size="12" font-weight="700" fill="#94A3B8">Updated 1m ago</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#64748B">Order ID</text>
+            </g>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#64748B">Customer</text>
+            </g>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#64748B">Items &amp; SKU</text>
+            </g>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#64748B">Total Amount</text>
+            </g>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#64748B">Inventory Status</text>
+            </g>
+            <g>
+              <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#64748B">Fulfillment</text>
+            </g>
+          </g>
+          <g>
+            <g>
+              <g>
+                <text x="0" y="12" font-family="monospace" font-size="12" font-weight="700" fill="#38BDF8">#ORD-98421</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="500" fill="#E2E8F0">Budi Pratama</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="500" fill="#E2E8F0">Ergonomic Desk Mat x 2</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="monospace" font-size="12" font-weight="700" fill="#E2E8F0">Rp 450.000</text>
+              </g>
+              <g>
+                <rect width="100" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1"/>
+                <g transform="translate(8, 40)">
+                  <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#34D399">Committed (Paid)</text>
+                </g>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#10B981">Ready to Dispatch (J&amp;T)</text>
+              </g>
+            </g>
+            <g>
+              <g>
+                <text x="0" y="12" font-family="monospace" font-size="12" font-weight="700" fill="#38BDF8">#ORD-98420</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="500" fill="#E2E8F0">Siti Rahma</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="500" fill="#E2E8F0">Mechanical Keyboard Pro x 1</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="monospace" font-size="12" font-weight="700" fill="#E2E8F0">Rp 1.250.000</text>
+              </g>
+              <g>
+                <rect width="100" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1"/>
+                <g transform="translate(8, 40)">
+                  <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#60A5FA">Committed (Packing)</text>
+                </g>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#60A5FA">Printing Shipping Label</text>
+              </g>
+            </g>
+            <g>
+              <g>
+                <text x="0" y="12" font-family="monospace" font-size="12" font-weight="700" fill="#38BDF8">#ORD-98419</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="500" fill="#E2E8F0">Denny Setiawan</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="500" fill="#E2E8F0">Wireless Mouse G3 x 1</text>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="monospace" font-size="12" font-weight="700" fill="#E2E8F0">Rp 320.000</text>
+              </g>
+              <g>
+                <rect width="100" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="1"/>
+                <g transform="translate(8, 40)">
+                  <text x="0" y="11" font-family="Inter" font-size="11" font-weight="700" fill="#FBBF24">Reserved (11:42 TTL)</text>
+                </g>
+              </g>
+              <g>
+                <text x="0" y="12" font-family="Inter" font-size="12" font-weight="600" fill="#FBBF24">Awaiting Payment</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
